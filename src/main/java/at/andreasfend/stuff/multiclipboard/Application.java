@@ -12,7 +12,6 @@ import java.awt.datatransfer.UnsupportedFlavorException;
 import java.awt.event.KeyEvent;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
@@ -37,7 +36,7 @@ public class Application {
         }
 
 
-        System.out.println("Global keyboard hook successfully started, press [escape] key to shutdown. Connected keyboards:");
+        System.out.println("Global keyboard hook successfully started. Connected keyboards:");
         for(Map.Entry<Long,String> keyboard:GlobalKeyboardHook.listKeyboards().entrySet())
             System.out.format("%d: %s\n", keyboard.getKey(), keyboard.getValue());
 
